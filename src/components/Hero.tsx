@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -26,13 +26,19 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-gray-200 mb-8">
             Nous transformons l'aluminium en solutions innovantes pour répondre à vos besoins industriels.
           </p>
-          <Button 
-            onClick={scrollToServices}
-            className="bg-white text-metal-dark hover:bg-metal-light flex items-center gap-2"
-          >
-            Découvrir nos services
-            <ArrowRight className="w-4 h-4" />
-          </Button>
+          <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
+            <Button 
+              onClick={scrollToServices}
+              className="bg-white text-metal-dark hover:bg-metal-light flex items-center gap-2"
+            >
+              Découvrir nos services
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+            <div className="flex items-center bg-metal-dark/70 text-white px-4 py-2 rounded-md">
+              <Phone className="w-5 h-5 mr-2" />
+              <span className="text-sm md:text-base">+212 620 203 799</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
