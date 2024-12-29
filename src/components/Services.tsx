@@ -1,11 +1,11 @@
-import { Shield, Tool, Recycle, Award } from "lucide-react";
+import { Shield, Wrench, Recycle, Award } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const services = [
   {
     title: "Fabrication sur mesure",
     description: "Solutions personnalisées selon vos spécifications exactes",
-    icon: Tool,
+    icon: Wrench,
   },
   {
     title: "Qualité supérieure",
