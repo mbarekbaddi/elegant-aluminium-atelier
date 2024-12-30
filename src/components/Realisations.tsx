@@ -5,32 +5,32 @@ const Realisations = () => {
 
   const projects = [
     {
-      image: "/lovable-uploads/57d0694a-517e-4ddb-8127-15073ba3fd04.webp",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
       title: t('realisations.kitchen.title'),
       description: t('realisations.kitchen.description')
     },
     {
-      image: "/lovable-uploads/5992a7c2-6292-4ebb-95e3-7353755b7e4f.webp",
+      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2",
       title: t('realisations.office.title'),
       description: t('realisations.office.description')
     },
     {
-      image: "/lovable-uploads/650ba817-92b1-4c22-8fbc-621948f046e8.webp",
+      image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
       title: t('realisations.meeting.title'),
       description: t('realisations.meeting.description')
     },
     {
-      image: "/lovable-uploads/d70cb2b4-9286-4e9b-bf8d-e8423522b7cb.webp",
+      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
       title: t('realisations.entrance.title'),
       description: t('realisations.entrance.description')
     },
     {
-      image: "/lovable-uploads/7c328778-e1c2-4d47-b3e8-88bc62b34d97.webp",
+      image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab",
       title: t('realisations.living.title'),
       description: t('realisations.living.description')
     },
     {
-      image: "/lovable-uploads/32d1c402-74a2-4efd-870d-e44b3a070d24.webp",
+      image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf",
       title: t('realisations.dining.title'),
       description: t('realisations.dining.description')
     }
