@@ -1,0 +1,29 @@
+{
+  "realisations": {
+    "title": "Nos Réalisations",
+    "kitchen": {
+      "title": "Cuisine Moderne",
+      "description": "Design contemporain avec finitions en vert lime et verre"
+    },
+    "office": {
+      "title": "Espace Bureau",
+      "description": "Cloisons vitrées modulaires pour espace professionnel"
+    },
+    "meeting": {
+      "title": "Salle de Réunion",
+      "description": "Verrière style atelier pour espace de travail collaboratif"
+    },
+    "entrance": {
+      "title": "Entrée Commerciale",
+      "description": "Portes en aluminium et verre pour accès professionnel"
+    },
+    "living": {
+      "title": "Espace de Vie",
+      "description": "Baies vitrées coulissantes pour luminosité maximale"
+    },
+    "dining": {
+      "title": "Coin Repas",
+      "description": "Fenêtres panoramiques avec vue sur jardin"
+    }
+  }
+}
