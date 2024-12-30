@@ -46,6 +46,33 @@ i18n
             send: "Envoyer",
             success: "Message envoyé",
             successDesc: "Nous vous répondrons dans les plus brefs délais."
+          },
+          realisations: {
+            title: "Réalisations",
+            kitchen: {
+              title: "Cuisine Moderne",
+              description: "Design contemporain avec finitions en vert lime et verre"
+            },
+            office: {
+              title: "Espace Bureau",
+              description: "Cloisons vitrées modulaires pour espace professionnel"
+            },
+            meeting: {
+              title: "Salle de Réunion",
+              description: "Verrière style atelier pour espace de travail collaboratif"
+            },
+            entrance: {
+              title: "Entrée Commerciale",
+              description: "Portes en aluminium et verre pour accès professionnel"
+            },
+            living: {
+              title: "Espace de Vie",
+              description: "Baies vitrées coulissantes pour luminosité maximale"
+            },
+            dining: {
+              title: "Coin Repas",
+              description: "Fenêtres panoramiques avec vue sur jardin"
+            }
           }
         }
       },
@@ -88,6 +115,33 @@ i18n
             send: "Send",
             success: "Message sent",
             successDesc: "We will respond as soon as possible."
+          },
+          realisations: {
+            title: "Our Projects",
+            kitchen: {
+              title: "Modern Kitchen",
+              description: "Contemporary design with lime green and glass finishes"
+            },
+            office: {
+              title: "Office Space",
+              description: "Modular glass partitions for professional space"
+            },
+            meeting: {
+              title: "Meeting Room",
+              description: "Workshop-style glass roof for collaborative workspace"
+            },
+            entrance: {
+              title: "Commercial Entrance",
+              description: "Aluminum and glass doors for professional access"
+            },
+            living: {
+              title: "Living Space",
+              description: "Sliding glass doors for maximum brightness"
+            },
+            dining: {
+              title: "Dining Area",
+              description: "Panoramic windows with garden view"
+            }
           }
         }
       },
@@ -130,6 +184,33 @@ i18n
             send: "إرسال",
             success: "تم إرسال الرسالة",
             successDesc: "سنرد عليك في أقرب وقت ممكن."
+          },
+          realisations: {
+            title: "مشاريعنا",
+            kitchen: {
+              title: "مطبخ عصري",
+              description: "تصميم معاصر مع لمسات خضراء وزجاجية"
+            },
+            office: {
+              title: "مساحة مكتبية",
+              description: "فواصل زجاجية قابلة للتعديل للمساحات المهنية"
+            },
+            meeting: {
+              title: "غرفة اجتماعات",
+              description: "سقف زجاجي بتصميم ورشة عمل لمساحة العمل التعاوني"
+            },
+            entrance: {
+              title: "مدخل تجاري",
+              description: "أبواب ألمنيوم وزجاج للوصول المهني"
+            },
+            living: {
+              title: "مساحة المعيشة",
+              description: "أبواب زجاجية منزلقة لإضاءة قصوى"
+            },
+            dining: {
+              title: "منطقة الطعام",
+              description: "نوافذ بانورامية مع إطلالة على الحديقة"
+            }
           }
         }
       }
