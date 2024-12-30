@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding">
       <div className="container mx-auto">
@@ -12,13 +16,13 @@ const About = () => {
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Notre Histoire
+              {t('about.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Depuis notre création, nous nous sommes engagés à fournir des solutions d'aluminium de la plus haute qualité. Notre expertise et notre engagement envers l'excellence nous ont permis de devenir un leader dans l'industrie.
+              {t('about.description1')}
             </p>
             <p className="text-lg text-gray-600">
-              Nous investissons continuellement dans les technologies les plus récentes et dans la formation de notre équipe pour garantir des produits qui dépassent les attentes de nos clients.
+              {t('about.description2')}
             </p>
           </div>
         </div>
