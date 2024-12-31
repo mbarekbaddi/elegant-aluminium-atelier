@@ -1,17 +1,24 @@
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { toast } from "sonner";
 
 const DownloadSection = () => {
   const { t } = useTranslation();
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/lovable-uploads/MondeALUGroupe.pdf';
-    link.download = 'MondeALUGroupe.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    try {
+      const link = document.createElement('a');
+      link.href = '/lovable-uploads/MondeALUGroupe.pdf';
+      link.download = 'MondeALUGroupe.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      toast.success(t('download.success', 'Téléchargement démarré'));
+    } catch (error) {
+      console.error('Erreur de téléchargement:', error);
+      toast.error(t('download.error', 'Erreur lors du téléchargement'));
+    }
   };
 
   return (
