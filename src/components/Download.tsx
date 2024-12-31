@@ -8,13 +8,26 @@ const DownloadSection = () => {
 
   const handleDownload = () => {
     try {
-      const link = document.createElement('a');
-      link.href = '/lovable-uploads/MondeALUGroupe.pdf';
-      link.download = 'MondeALUGroupe.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      toast.success(t('download.success', 'Téléchargement démarré'));
+      // Vérifier si le fichier existe avant de tenter le téléchargement
+      fetch('/lovable-uploads/MondeALUGroupe.pdf')
+        .then(response => {
+          if (response.ok) {
+            const link = document.createElement('a');
+            link.href = '/lovable-uploads/MondeALUGroupe.pdf';
+            link.download = 'MondeALUGroupe.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            toast.success(t('download.success', 'Téléchargement démarré'));
+          } else {
+            console.error('Fichier non trouvé');
+            toast.error(t('download.error', 'Le fichier est introuvable'));
+          }
+        })
+        .catch(error => {
+          console.error('Erreur lors de la vérification du fichier:', error);
+          toast.error(t('download.error', 'Erreur lors du téléchargement'));
+        });
     } catch (error) {
       console.error('Erreur de téléchargement:', error);
       toast.error(t('download.error', 'Erreur lors du téléchargement'));
