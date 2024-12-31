@@ -44,7 +44,7 @@ const Hero = () => {
             </Button>
             <div className="flex items-center bg-metal-dark/70 text-white px-4 py-2 rounded-md">
               <Phone className="w-5 h-5 mr-2" />
-              <span className="text-sm md:text-base">+212 620 203 799</span>
+              <span className="text-sm md:text-base">+212 620 203 798</span>
             </div>
           </div>
         </div>
