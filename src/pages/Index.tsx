@@ -3,6 +3,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Realisations from "@/components/Realisations";
+import DownloadSection from "@/components/Download";
 import LanguageSelector from "@/components/LanguageSelector";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <Services />
       <About />
       <Realisations />
+      <DownloadSection />
       <Contact />
     </main>
   );

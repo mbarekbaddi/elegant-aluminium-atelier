@@ -1,4 +1,4 @@
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from 'react-i18next';
 
@@ -23,6 +23,11 @@ const Hero = () => {
       />
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-3xl">
+          <img 
+            src="/lovable-uploads/df88b5fe-d0c0-4576-b3b3-82977c4872f2.png" 
+            alt="Monde ALU Groupe" 
+            className="w-64 md:w-80 mb-8"
+          />
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             {t('hero.title')}
           </h1>
