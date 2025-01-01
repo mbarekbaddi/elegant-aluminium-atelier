@@ -5,31 +5,45 @@ import { toast } from "sonner";
 
 const DownloadSection = () => {
   const { t } = useTranslation();
+  const filePath = '/lovable-uploads/MondeALUGroupe.pdf';
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     try {
-      // Vérifier si le fichier existe avant de tenter le téléchargement
-      fetch('/lovable-uploads/MondeALUGroupe.pdf')
-        .then(response => {
-          if (response.ok) {
-            const link = document.createElement('a');
-            link.href = '/lovable-uploads/MondeALUGroupe.pdf';
-            link.download = 'MondeALUGroupe.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            toast.success(t('download.success', 'Téléchargement démarré'));
-          } else {
-            console.error('Fichier non trouvé');
-            toast.error(t('download.error', 'Le fichier est introuvable'));
-          }
-        })
-        .catch(error => {
-          console.error('Erreur lors de la vérification du fichier:', error);
-          toast.error(t('download.error', 'Erreur lors du téléchargement'));
-        });
+      // Vérifier si le fichier existe
+      const response = await fetch(filePath, {
+        method: 'HEAD' // Utiliser HEAD pour vérifier uniquement les métadonnées
+      });
+
+      if (!response.ok) {
+        console.error('Statut de la réponse:', response.status);
+        console.error('Headers:', Object.fromEntries(response.headers.entries()));
+        toast.error(t('download.error', `Erreur: Le fichier est introuvable (${response.status})`));
+        return;
+      }
+
+      // Vérifier le type MIME
+      const contentType = response.headers.get('content-type');
+      if (contentType && !contentType.includes('application/pdf')) {
+        console.error('Type de fichier incorrect:', contentType);
+        toast.error(t('download.error', 'Format de fichier invalide'));
+        return;
+      }
+
+      // Télécharger le fichier
+      const downloadResponse = await fetch(filePath);
+      const blob = await downloadResponse.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'MondeALUGroupe.pdf';
+      document.body.appendChild(link);
+      link.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(link);
+      
+      toast.success(t('download.success', 'Téléchargement démarré'));
     } catch (error) {
-      console.error('Erreur de téléchargement:', error);
+      console.error('Erreur détaillée:', error);
       toast.error(t('download.error', 'Erreur lors du téléchargement'));
     }
   };
