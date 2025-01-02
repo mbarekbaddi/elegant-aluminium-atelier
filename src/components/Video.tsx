@@ -14,7 +14,7 @@ const Video = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
           <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden group cursor-pointer">
             <iframe
-              src="https://www.youtube.com/embed/your-video-id"
+              src="https://www.youtube.com/embed/7So7NcDEC7c"
               title="Monde ALU - Présentation"
               className="absolute inset-0 w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
