@@ -73,6 +73,11 @@ i18n
               title: "Coin Repas",
               description: "Fenêtres panoramiques avec vue sur jardin"
             }
+          },
+          video: {
+            title: "Nos Réalisations en Action",
+            mainTitle: "Découvrez Notre Savoir-faire",
+            description: "Plongez dans l'univers de Monde ALU à travers nos vidéos. Découvrez nos processus de fabrication, nos installations et nos réalisations les plus impressionnantes."
           }
         }
       },
@@ -142,6 +147,11 @@ i18n
               title: "Dining Area",
               description: "Panoramic windows with garden view"
             }
+          },
+          video: {
+            title: "Our Projects in Action",
+            mainTitle: "Discover Our Expertise",
+            description: "Dive into the world of Monde ALU through our videos. Discover our manufacturing processes, facilities, and most impressive achievements."
           }
         }
       },
@@ -211,6 +221,11 @@ i18n
               title: "منطقة الطعام",
               description: "نوافذ بانورامية مع إطلالة على الحديقة"
             }
+          },
+          video: {
+            title: "مشاريعنا في العمل",
+            mainTitle: "اكتشف خبرتنا",
+            description: "انغمس في عالم موند ألو من خلال مقاطع الفيديو الخاصة بنا. اكتشف عمليات التصنيع ومرافقنا وإنجازاتنا الأكثر إثارة للإعجاب."
           }
         }
       }

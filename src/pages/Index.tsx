@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import Realisations from "@/components/Realisations";
 import DownloadSection from "@/components/Download";
 import LanguageSelector from "@/components/LanguageSelector";
+import Video from "@/components/Video";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <Services />
       <About />
       <Realisations />
+      <Video />
       <DownloadSection />
       <Contact />
     </main>
